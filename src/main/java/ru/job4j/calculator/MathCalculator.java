@@ -7,8 +7,22 @@ public class MathCalculator {
                 + ru.job4j.math.MathFunction.multiply(first, second);
     }
 
-    public static void main(String[] args) {
+    public static double subAndShare(double first, double second) {
+        return ru.job4j.math.MathFunction.sub(first, second)
+                + ru.job4j.math.MathFunction.share(first, second);
+    }
 
+    public static double sumAndMultiplyAndSubAndShare(double first, double second) {
+        return ru.job4j.math.MathFunction.sum(first, second)
+                + ru.job4j.math.MathFunction.multiply(first, second)
+                + ru.job4j.math.MathFunction.sub(first, second)
+                + ru.job4j.math.MathFunction.share(first, second);
+    }
+
+    public static void main(String[] args) {
         System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
+        System.out.println("Результат расчета равен: " + subAndShare(10, 5));
+        //System.out.println("Результат расчета равен: " + (sumAndMultiply(10, 20) + subAndShare(10, 5)));
+        System.out.println("Результат расчета равен: " + sumAndMultiplyAndSubAndShare(50, 25));
     }
 }
