@@ -1,6 +1,7 @@
 package ru.job4j.calculator;
 
 import static ru.job4j.math.MathFunction.*;
+
 public class MathCalculator {
     public static double sumAndMultiply(double first, double second) {
         return ru.job4j.math.MathFunction.sum(first, second)
@@ -13,10 +14,7 @@ public class MathCalculator {
     }
 
     public static double sumAndMultiplyAndSubAndShare(double first, double second) {
-        return ru.job4j.math.MathFunction.sum(first, second)
-                + ru.job4j.math.MathFunction.multiply(first, second)
-                + ru.job4j.math.MathFunction.sub(first, second)
-                + ru.job4j.math.MathFunction.share(first, second);
+        return sum(first, second) + multiply(first, second) + sub(first, second) + share(first, second);
     }
 
     public static void main(String[] args) {
