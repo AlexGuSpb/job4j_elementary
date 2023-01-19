@@ -8,8 +8,9 @@ public class Max {
     }
 
     public static boolean maxx(int left, int right) {
-        boolean result = left > right ? true : false;
-        return result;
+        boolean can = left > right;
+        String result = can ? "true" : "false";
+        return can;
     }
 
     public static int summation(int first, int second) {
