@@ -3,19 +3,11 @@ package ru.job4j.condition;
 public class Max {
 
     public static int max(int left, int right) {
-        int result = left > right ? left : right;
-        return result;
-    }
-
-    public static boolean maxx(int left, int right) {
-        boolean can = left > right;
-        String result = can ? "true" : "false";
-        return can;
+        return left > right ? left : right;
     }
 
     public static int summation(int first, int second) {
-        int result = first + second;
-        return result;
+        return first + second;
     }
 
     public static void main(String[] args) {
@@ -23,7 +15,5 @@ public class Max {
         System.out.println(maximum);
         int sum = Max.summation(10, 5);
         System.out.println(sum);
-        boolean answer = Max.maxx(10, 5);
-        System.out.println(answer);
     }
 }
