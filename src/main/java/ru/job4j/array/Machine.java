@@ -10,9 +10,8 @@ public class Machine {
         int cashback = money - price;
         for (int i = 0; i < coins.length; i++) {
             while (cashback >= coins[i]) {
-                cashback = cashback - coins[i];
-                rsl[size] = coins[i];
-                size++;
+                cashback -= coins[i];
+                rsl[size++] = coins[i];
             }
         }
         return Arrays.copyOf(rsl, size);
